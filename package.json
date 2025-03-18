@@ -4,7 +4,7 @@
   "description": "Education at youtube itProger",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/BodnarAlex/educate-node/issues"
   },
-  "homepage": "https://github.com/BodnarAlex/educate-node#readme"
+  "homepage": "https://github.com/BodnarAlex/educate-node#readme",
+  "dependencies": {
+    "@types/node": "^22.13.10",
+    "currency-converter-lt": "^2.0.1"
+  }
 }
