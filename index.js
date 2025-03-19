@@ -1,9 +1,8 @@
-const os = require('os');
+const fs = require('fs');
 
-const res = os.platform();
-console.log(res);
+let tres = fs.readFile('some.txt', 'utf-8', (err, data1) => {
+  fs.writeFile('some.txt', data1 + '\nSome text', (err, data2 => {
+    console.log(`Сработало  ${data1}`);
+  }));
+});
 
-const my_math = require('./my_muth');
-let res2 = my_math.add(3,4);
-let res3 = my_math.minus(3,4);
-console.log(`Plus:  ${res2}, Minus: ${res3}`);
