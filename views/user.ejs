@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Express</title>
+  <link rel="stylesheet" href="/css/main.css">
+
+</head>
+
+<body>
+  <%- include('block/header') -%>
+
+    <h1>User</h1>
+    <p>Имя пользователя: <%= username %>
+    </p>
+    <% if(username.toLowerCase()=='alex' ) { %>
+      <p>Хобби:</p>
+      <ul>
+        <% hobbies.forEach((el)=> { %>
+          <li>
+            <%= el %>
+          </li>
+          <%})%>
+      </ul>
+      <% } %>
+</body>
+
+</html>
