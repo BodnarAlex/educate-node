@@ -13,9 +13,9 @@
   <%- include('block/header') -%>
 
     <h1>User</h1>
-    <p>Имя пользователя: <%= name %>
+    <p>Имя пользователя: <%= username %>
     </p>
-    <% if(name.toLowerCase()=='alex' ) { %>
+    <% if(username.toLowerCase()=='alex' ) { %>
       <p>Хобби:</p>
       <ul>
         <% hobbies.forEach((el)=> { %>
