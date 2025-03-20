@@ -18,6 +18,7 @@
   "homepage": "https://github.com/BodnarAlex/educate-node#readme",
   "dependencies": {
     "@types/node": "^22.13.10",
-    "currency-converter-lt": "^2.0.1"
+    "currency-converter-lt": "^2.0.1",
+    "express": "^4.21.2"
   }
 }
